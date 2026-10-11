@@ -9,6 +9,12 @@ export const loadMenupage = () => {
   menuHeading.classList.add("menu-heading");
   content.appendChild(menuHeading);
 
+  const rant = document.createElement("h1");
+  rant.textContent = "I'm not adding images\nIt's boring as hell";
+  rant.classList.add("rant");
+  rant.style.whiteSpace = "pre-line";
+  content.appendChild(rant);
+
   const menuItemsContainer = document.createElement("div");
   menuItemsContainer.classList.add("menu-items-container");
 
