@@ -4,6 +4,9 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 export default {
   mode: "development",
   entry: "./src/index.js",
+  experiments: {
+    css: true, // Enables native CSS parsing and bundling
+  },
   output: {
     filename: "main.js",
     path: path.resolve(import.meta.dirname, "dist"),
@@ -18,4 +21,12 @@ export default {
       template: "./src/template.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+    ],
+  },
 };

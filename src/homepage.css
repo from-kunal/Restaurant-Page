@@ -1,0 +1,25 @@
+#content {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  width: 80%;
+  max-width: 75rem;
+  margin: 1rem auto;
+}
+
+.restaurant-info {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+#brief {
+  font-size: 2rem;
+}
+
+#headline {
+  align-items: flex-start;
+}
