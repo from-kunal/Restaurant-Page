@@ -5,20 +5,29 @@ body {
   background-color: #f1eee6;
 }
 
-header {
-  display: flex;
-  width: 80%;
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: 1rem 0;
-  justify-content: space-between;
-  align-items: center;
+.site-header {
+  width: 100%;
   background: #252728;
 
   /* make header bar stick to top*/
   position: sticky;
   z-index: 1000; /* keeps header above other content */
   top: 0;
+}
+
+.page-container {
+  width: 80%;
+  max-width: 75rem;
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background: #252728;
 }
 
 .restaurant-logo-div {
