@@ -99,9 +99,8 @@ h1 {
   flex-direction: column;
 }
 
-.menu-heading {
-  font-size: var(--main-heading-fz);
-  letter-spacing: var(--main-heading-ls);
+.menu-heading,
+.rant {
   text-align: center;
   padding: 25px;
   margin-top: 25px;
