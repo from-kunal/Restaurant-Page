@@ -1,10 +1,10 @@
 import path from "node:path";
-import HtmlWebpackPlugin from "html-webpack-plugin";
 
 export default {
-  mode: "development",
+  mode: "production",
   entry: "./src/index.js",
   experiments: {
+    html: true, // Enables native HTML support as first-class modules
     css: true, // Enables native CSS parsing and bundling
   },
   output: {
@@ -16,11 +16,6 @@ export default {
   devServer: {
     watchFiles: ["./src/template.html"],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/template.html",
-    }),
-  ],
   module: {
     rules: [
       {
